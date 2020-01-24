@@ -23,8 +23,14 @@
   box-shadow: 100vw 0 0 #009ddb;
   z-index: -1;
 }
-.aeh-header__text {
+.aeh-header-main {
+  background-color: #ffdd00;
+  padding: 10px;
+  font-weight: 100;
+}
+.aeh-header-sub {
   color: #ffffff;
+  font-weight: 100;
 }
 
 .aeh-section {
@@ -46,6 +52,11 @@
 .aeh-link:hover, .aeh-link:focus {
   color: #0b0c0c;
 }
+a:focus {
+	outline-color: #ffdd00;
+    background-color: #ffdd00;
+}
+
 
 .aeh-float-left {
   float: left;
