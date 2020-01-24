@@ -1,152 +1,87 @@
-.aeh-body {
-  color: #462753;
-}
-
 .aeh-main {
-  border-top: 15px solid #462753;
+  border-top: 15px solid #009ddb;
 }
-
-.aeh-section {
-  border-top: 1px solid #462753;
-  padding: 20px 0;
-}
-
-.aeh-section--no-border {
-  border-top: none;
-  padding: 20px 0;
+.aeh-main img {
+  max-width: 100%;
+  height: auto;
 }
 
 .aeh-header {
   position: relative;
   z-index: 0;
-  padding: 15px;
-  background-color: #462753;
-}
-
-.aeh-header--expanded {
-  position: relative;
-  z-index: 0;
   padding: 15px 0;
-  background-color: #462753;
+  background-color: #009ddb;
 }
-
-.aeh-header--expanded:before {
+.aeh-header:before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: -100vw;
   right: 0;
-  border-left: 100vw solid #462753;
-  box-shadow: 100vw 0 0 #462753;
+  border-left: 100vw solid #009ddb;
+  box-shadow: 100vw 0 0 #009ddb;
   z-index: -1;
 }
-
 .aeh-header__text {
-  color: #fff;
+  color: #ffffff;
 }
 
-.aeh-header__link:link {
-  color: #fff;
+.aeh-section {
+  border-top: 1px solid #b1b4b6;
+  padding: 20px 0;
 }
-
-.aeh-header__link:visited {
-  color: #fff;
+.aeh-section--no-border {
+  border-top: none;
+  padding: 20px 0;
 }
 
 .aeh-text {
-  color: #462753;
+  color: #009ddb;
 }
 
-.aeh-activity {
-  color: #462753;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 8px;
+.aeh-link:link, .aeh-link:visited {
+  color: #009ddb;
 }
-
-.aeh-place {
-  position: relative;
-  margin-bottom: 8px;
-}
-
-.aeh-time {
-  position: relative;
-  margin-bottom: 8px;
-}
-
-.aeh-email-body {
-  position: relative;
-  margin-bottom: 8px;
-}
-
-.aeh-link:link {
-  color: #462753;
-  font-weight: 700;
-}
-
-.aeh-link:visited {
-  color: #462753;
-  font-weight: 700;
-}
-
-.aeh-link:focus {
+.aeh-link:hover, .aeh-link:focus {
   color: #0b0c0c;
 }
 
-.aeh-link:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-  background-color: #ffbf47;
+.aeh-float-left {
+  float: left;
+}
+.aeh-float-right {
+  float: right;
+}
+.aeh-float-clear {
+  float: none;
+  clear: both;
 }
 
-.aeh-resource {
+.video-wrapper {
   position: relative;
-  margin-bottom: 30px;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
-
-.aeh-resource__text {
-  padding-left: 50px;
-  display: block;
-}
-
-.aeh-resource__icon {
-  font-family: "nta", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  display: inline-block;
+.video-wrapper iframe {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
-  min-width: 32px;
-  min-height: 29px;
-  margin-top: -20px;
-  padding-top: 3px;
-  border: 3px solid #462753;
-  border-radius: 50%;
-  color: #fff;
-  background: #462753;
-  font-size: 1.6em;
-  line-height: 29px;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  width: 100%;
+  height: 100%;
 }
 
 .hmrc-banner {
   padding: 10px 0 8px;
   position: relative
 }
-
 @media (min-width: 641px) {
   .hmrc-banner {
     padding-bottom: 10px
   }
 }
-
 .hmrc-banner p {
   display: table;
   margin: 0;
@@ -157,14 +92,12 @@
   font-size: 14px;
   line-height: 1.14286
 }
-
 @media (min-width: 641px) {
   .hmrc-banner p {
     font-size: 16px;
     line-height: 1.25
   }
 }
-
 .hmrc-banner span {
   display: table-cell;
   vertical-align: baseline
@@ -176,44 +109,23 @@
   background-size: auto 20px;
   border-left: 2px solid #009390;
 }
-
 @media all and (-webkit-min-device-pixel-ratio: 2) {
   .organisation-logo {
     background-image: url("../images/crests/hmrc_crest_18px_x2.png");
   }
 }
-
 @media (min-width: 641px) {
   .organisation-logo {
     background-size: auto 26px;
     padding: 3px 0 3px 38px
   }
 }
-
-
 .organisation-logo p {
   font: 13px/16px Helvetica, Arial;
   margin: 0
 }
-
 @media (min-width: 641px) {
   .organisation-logo p {
     font: 18px/22px Helvetica, Arial
   }
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
