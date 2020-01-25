@@ -7,21 +7,8 @@
 }
 
 .aeh-header {
-  position: relative;
-  z-index: 0;
-  padding: 15px 0;
+  padding: 20px;
   background-color: #009ddb;
-}
-.aeh-header:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -100vw;
-  right: 0;
-  border-left: 100vw solid #009ddb;
-  box-shadow: 100vw 0 0 #009ddb;
-  z-index: -1;
 }
 .aeh-header-main {
   background-color: #ffdd00;
@@ -39,11 +26,15 @@
 }
 .aeh-section--no-border {
   border-top: none;
-  padding: 20px 0;
+  padding: 0;
 }
 
 .aeh-text {
   color: #009ddb;
+}
+
+.aeh-list>li {
+    margin-top: 20px;
 }
 
 .aeh-link:link, .aeh-link:visited {
@@ -65,7 +56,8 @@ a:focus {
   float: right;
 }
 .aeh-float-clear {
-  float: none;
+  display: block;
+  content: "";
   clear: both;
 }
 
