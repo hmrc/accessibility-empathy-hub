@@ -51,7 +51,7 @@
   background-color: #ffdd00;
 }
 .accordion.with-js .accordion-section-header:focus {
-  outline: 0;
+  background-color: #ffdd00;
 }
 
 .accordion.with-js .icon {
