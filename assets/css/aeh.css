@@ -24,6 +24,10 @@ img {
   font-weight: 100;
 }
 
+.aeh-section {
+  border-top: 1px solid #b1b4b6;
+  padding: 20px 0;
+}
 .aeh-list>li {
     margin-top: 20px;
 }
