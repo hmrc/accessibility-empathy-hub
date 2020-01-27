@@ -1,132 +1,245 @@
 <!DOCTYPE html>
-<html lang="en" class="govuk-template ">
-
+<html lang="en" class="govuk-template app-html-class">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Accessibility Empathy Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" />
+    <meta name="theme-color" content="blue"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/favicon.ico" type="image/x-icon" />
-    <link rel="mask-icon" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-apple-touch-icon.png">
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-mask-icon.svg" color="blue"> 
+      <link rel="apple-touch-icon" sizes="180x180" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-apple-touch-icon.png">
 
     <!--[if !IE 8]><!-->
-    <link href="./assets/css/govuk-frontend-unbranded.css" rel="stylesheet" />
+      <link href="./assets/css/govuk-main.css" rel="stylesheet" media="all">
     <!--<![endif]-->
-
-    <!--[if IE 8]>
-    <link href="./assets/css/govuk-frontend-ie8-unbranded.css" rel="stylesheet" />
-  <![endif]-->
-
     <!--[if lt IE 9]>
-    <script src="./assets/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link href="./assets/css/govuk-main-ie8.css" rel="stylesheet" media="all">
+      <script src="./assets/js/govuk-head-ie8.js"></script>
+    <![endif]-->
+    <script src="./assets/js/modernizr.js"></script>
     
-    <link rel="stylesheet" href="./assets/css/aeh.css">
-
+	<link rel="stylesheet" href="./assets/css/aeh.css">
     <meta property="og:image" content="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/assets/images/govuk-opengraph-image.png">
   </head>
+  <body class="govuk-template__body app-body-class">
+      <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
-  <body class="govuk-template__body ">
-    <script>
-      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-    </script>
-
-    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-
-    <div class="govuk-width-container">
-
-      <header class="hmrc-banner govuk-!-padding-top-3 govuk-!-padding-bottom-3" role="banner">
-        <div class="organisation-logo">
-          <p>HM Revenue &amp; Customs</p>
-        </div>
-      </header>
-
-      <main class="govuk-main-wrapper govuk-!-padding-0" id="main-content" role="main">
-        <header class="aeh-header">
-          <h1 class="govuk-heading-xl aeh-header-main">Accessibility Empathy Hub</h1>
-		  <h2 class="govuk-heading-m aeh-header-sub">inclusion through design</h2>
-        </header>
-		
-		<p class="aeh-float-right govuk-!-margin-left-5"><img src="./assets/images/logo.jpg" alt="accessibility empathy hub - inclusion through design logo" /></p>
-		<p class="govuk-body govuk-!-padding-top-3">Everyone has a part to play in ensuring that the content and digital services we provide to our customers and colleagues are accessible.</p>
-		
-		<nav aria-label="pages in this site" role="navigation">
-		  <h2 class="govuk-heading-m govuk-!-padding-top-3">Contents</h2>
-		  <ul class="govuk-list">
-		    <li aria-current="true">
-			  <a class="aeh-link govuk-!-font-weight-bold" href="#what">What is an Accessibility Empathy Hub?</a>
-		    </li>
-		    <li>
-			  <a class="aeh-link" href="numbers.html">Accessibility in numbers</a>
-		    </li>
-		    <li>
-			  <a class="aeh-link" href="where.html">Where the barriers and issues lie</a>
-		    </li>
-		    <li>
-			  <a class="aeh-link" href="why.html">Why is accessibility important</a>
-		    </li>
-		    <li>
-			  <a class="aeh-link" href="visit.html">Visit our Accessibility Empathy Hub in London or Newcastle</a>
-		    </li>
-		    <li>
-			  <a class="aeh-link" href="desk.html">Things you can do at your desk</a>
-		    </li>
-		    <li>
-			  <a class="aeh-link" href="contact.html">Contact us</a>
-		    </li>
-		  </ul>
-		</nav>
-
-        <section class="aeh-section govuk-!-padding-top-9" id="what">
-		  <h2 class="govuk-heading-l">What is an Accessibility Empathy Hub?</h2>
-          <p class="govuk-body">HMRC has set up our Accessibility Empathy Hubs to demonstrate the barriers that disabled people can face.</p>
-		  <p class="govuk-body">We want to inspire you to think about the role you play in a new, more accessible way. Even if you are not involved in the development of digital services or websites, you can still help improve the accessibility of documents that we create and share.</p>
-		  <p class="govuk-body">You can use the Accessibility Empathy Hub to gain an insight into the experiences of users with access needs.</p>
-        </section>
-		
-		<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible" />
-		
-		<nav role="navigation" aria-label="pagination">
-		  <ul class="govuk-list">
-			<li>
-			  Next <a class="aeh-link" href="numbers.html">Accessibility in numbers</a>
-		    </li>
-		  </ul>
-		</nav>
-      </main>
-    </div>
-
-    <footer class="govuk-footer " role="contentinfo">
-      <div class="govuk-width-container ">
-        <div class="govuk-footer__meta">
-          <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-
-            <svg role="presentation" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483.2 195.7" height="17" width="41">
-              <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
-            </svg>
-            <span class="govuk-footer__licence-description">
-              All content is available under the
-              <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
-            </span>
-          </div>
-          <div class="govuk-footer__meta-item">
-            <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
-          </div>
-        </div>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+  
+      <div class="govuk-width-container app-width-container--wide">		
+		<main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
+          <header class="hmrc-banner govuk-!-padding-top-3 govuk-!-padding-bottom-3" role="banner">
+            <div class="organisation-logo">
+              <p>HM Revenue &amp; Customs</p>
+            </div>
+          </header>
+		  
+		  <header class="aeh-header">
+            <h1 class="govuk-heading-xl aeh-header-main">Accessibility Empathy Hub</h1>
+		    <h2 class="govuk-heading-m aeh-header-sub">Changing People's Perceptions</h2>
+          </header>
+		  
+		  <section>
+			<p class="govuk-body govuk-!-padding-top-5">Everyone has a part to play in ensuring that the content and digital services we provide to our customers and colleagues are accessible.</p>
+			<h2 class="govuk-heading-m">What is an Accessibility Empathy Hub?</h2>
+			<p class="govuk-body">HMRC has set up our Accessibility Empathy Hubs to demonstrate the barriers that disabled people can face.</p>
+			<p class="govuk-body">We want to inspire you to think about the role you play in a new, more accessible way. Even if you are not involved in the development of digital services or websites, you can still help improve the accessibility of documents that we create and share.</p>
+			<p class="govuk-body">You can use the Accessibility Empathy Hub to gain an insight into the experiences of users with access needs.</p>
+		  </section>
+  
+		  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+		  <div class="govuk-accordion__section ">
+			<div class="govuk-accordion__section-header">
+			  <h2 class="govuk-accordion__section-heading">
+				<span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+				  Why is accessibility important
+				</span>
+			  </h2>
+			</div>
+			<div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+			  <section>		
+				  <p class="govuk-body aeh-float-left govuk-!-margin-right-5"><img width="449" height="300" src="./assets/images/citizens-advice-branch.jpg" alt="customers waiting inside a Citizen's Advice branch photograph" /></p>
+				  <p class="govuk-body">A fully <a class="govuk-link" href="https://gds.blog.gov.uk/2018/06/29/building-inclusive-government-services/" target="_blank">inclusive government service</a> is one that can be accessed and successfully completed by all its users. They will be able to interact however they need to, regardless of their personal characteristics, situations, capabilities or access needs.</p><span class="aeh-float-clear"></span>
+			  </section>				  
+			  <section>
+				  <p class="govuk-body">There are many benefits to designing and building inclusive services.</p>
+				  <ul class="govuk-list govuk-list--bullet aeh-list">
+					<li>Providing an accessible service will result in a better experience for everyone, not just our disabled customers</li>
+					<li>We will be meeting our legal requirements
+					  <ul class="govuk-list govuk-list--bullet">
+						<li><a class="govuk-link" href="https://www.gov.uk/guidance/equality-act-2010-guidance" target="_blank">Equality Act 2010</a>, we have a legal obligation to provide equal access to people with disabilities</li>
+						<li><a class="govuk-link" href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps" target="_blank">Public Sector Accessibility Regulations 2018</a>, we have a duty to be proactive in making things accessible</li>
+					  </ul>
+					</li>
+					<li>It’s more cost-effective if all users can use a single digital service rather than developing multiple, costlier services catering for specific needs</li>
+					<li>By thinking about accessibility and inclusion from the start you can avoid costly rework at the end of a project</li>
+				  </ul>
+			  </section>
+			</div>
+		  </div>
+		  <div class="govuk-accordion__section ">
+			<div class="govuk-accordion__section-header">
+			  <h2 class="govuk-accordion__section-heading">
+				<span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+				  Accessibility in numbers
+				</span>
+			  </h2>
+			</div>
+			<div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+			  <p class="govuk-body">To give you some food for thought and to show how important it is that we all need to think about accessibility from the start we have collated a few statistics for you.</p>
+			  <div id="player" class="video-wrapper">
+				<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/HFckJrxle0o" frameborder="0"></iframe>
+			  </div>
+			  <ul class="govuk-list govuk-list--bullet aeh-list">
+				<li>70+% of conditions relating to disabilities aren’t visible (data from <a class="govuk-link" href="https://www.youtube.com/watch?v=cEvQsydG2oQ&list=PLBZAmkUw3YZsyPNPxFkjy2-QgA7Uc_XWL&index=3" target="_blank">Microsoft Office 365 YouTube</a>)</li>
+				<li>7 in 10 disabled customers with access needs will click away from a website they find difficult to use. Only 1 in 10 will make a complaint about it (from <a class="govuk-link" href="https://www.youtube.com/watch?v=HFckJrxle0o&list=PLBZAmkUw3YZsyPNPxFkjy2-QgA7Uc_XWL&index=3&t=0s" target="_blank">Barclays Corporate Banking YouTube</a>)</li>
+				<li>6.4 million people (10%) in the UK have dyslexia</li>
+				<li>700,000 people in the UK are on the autistic spectrum</li>
+				<li>Over 2 million people in the UK live with sight loss. 360,000 are registered blind or partially sighted</li>
+				<li>10 million people in the UK have arthritis</li>
+				<li>145,000 people have Parkison’s</li>
+				<li>12 million people in the UK have some kind of hearing loss. 900,000 of these have severe or profound hearing loss</li>
+				<li>10% of civil servants have declared they have a disability.  In HMRC 13.6% of staff have declared they have a disability (as of 31 December 2019)</li>
+			  </ul>
+			</div>
+		  </div>
+		  <div class="govuk-accordion__section ">
+			<div class="govuk-accordion__section-header">
+			  <h2 class="govuk-accordion__section-heading">
+				<span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+				  Where the barriers and issues exist
+				</span>
+			  </h2>
+			</div>
+			<div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+			  <section>
+				  <p class="govuk-body">The issues faced area generally regarded as vision, hearing, motor or cognitive. The <a class="govuk-link" href="https://github.com/alphagov/govdesign/blob/master/Poster_GOVUK_InclusiveDesign.pdf" target="_blank">design for everyone poster</a> details the following barriers that people face as a result of their disabilities and how we can address them:</p>
+				  <p class="aeh-float-right govuk-!-margin-left-5"><a href="https://github.com/alphagov/govdesign/blob/master/Poster_GOVUK_InclusiveDesign.pdf" target="_blank"><img width="215" height="300" src="./assets/images/design-for-everyone-poster.jpg" alt="design for everyone poster thumbnail image" /></a></p>
+				  <ul class="govuk-list govuk-list--bullet">
+					<li>People who find it hard to understand</li>
+					<li>People who need custom design</li>
+					<li>People who aren’t online</li>
+					<li>People in distracting situations</li>
+					<li>People using screen readers</li>
+					<li>People who find it hard to read</li>
+					<li>People who can’t talk</li>
+					<li>People who can’t see colour</li>
+					<li>People who struggle with computers (due to inexperience or medical conditions)</li>
+					<li>People who find it hard to see</li>
+					<li>People who can’t hear</li>
+				  </ul>		  
+			  </section>				  
+			  <section>
+				  <p class="govuk-body"><a class="aeh-float-right govuk-!-margin-left-5" href="./assets/images/permanent-temporary-situational.png" target="_blank"><img width="215" height="297" src="./assets/images/permanent-temporary-situational.jpg" alt="permanent, temporary or situational inclusivity poster thumbnail image" /></a>
+				  The <a class="govuk-link" href="./assets/images/permanent-temporary-situational.png" target="_blank">disabilities may be permanent, temporary or situational</a> and to be inclusive we need to deal with all circumstances.</p><span class="aeh-float-clear"></span>
+			  </section>
+			</div>
+		  </div>
+		  <div class="govuk-accordion__section ">
+			<div class="govuk-accordion__section-header">
+			  <h2 class="govuk-accordion__section-heading">
+				<span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+				  Activities you can try at your desk
+				</span>
+			  </h2>
+			</div>
+			<div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+			  <section>		
+				  <p class="govuk-body">As well as visiting our Accessibility Empathy Hub in London or Newcastle we have put together a few are things that you can do at your desk to gain an insight into the experiences of users with access needs.</p>
+				</section>				  
+				<section>
+				  <h3 class="govuk-heading-s">Try these activities</h3>
+				  <ul class="govuk-list govuk-list--bullet aeh-list">
+					<li><a class="govuk-link" href="https://accessibility.blog.gov.uk/2016/05/19/dump-your-mouse-for-an-hour/" target="_blank">Not everyone uses a mouse</a> - unplug your mouse or disable your trackpad and try  using your keyboard only for an hour</li>
+					<li><a class="govuk-link" href="https://data.qz.com/2016/dyslexia/" target="_blank">Dyslexia simulator</a> - rearranges the letters within words on a page to give a feel for what reading with dyslexia may be like</li>
+					<li><a class="govuk-link" href="http://www.colourblindawareness.org/colour-blindness/colour-blindness-experience-it/" target="_blank">Colour Blindness Experience</a> - find out what it is like to live in a colour-blind world and get access to simulators to find out what your content looks like to someone who is colour blind</li>
+					<li><a class="govuk-link" href="https://www.starkey.co.uk/hearing-loss-simulator#!/hls" target="_blank">Hearing Loss Simulator</a> - find out how different levels of hearing loss are perceived</li>
+					<li><a class="govuk-link" href="http://www.funkify.org" target="_blank">http://www.funkify.org</a> - simulators that mimic cognitive; dyslexia; motor and vision conditions. You can experience the web through the eyes of users with these disabilities. <span class="govuk-!-font-weight-bold">Note:</span> you will probably not be able to run this on your HMRC Stride machine.</li>
+				  </ul>	
+				</section>				  
+				<section>
+				  <h3 class="govuk-heading-s">Watch and listen to some videos</h3>
+				  <ul class="govuk-list govuk-list--bullet aeh-list">
+					<li>
+					  <h4 class="govuk-body">What does accessibility mean?</h4>
+					  <div id="player" class="video-wrapper">
+						<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/QJlCBji5NpA" frameborder="0"></iframe>
+					  </div>
+					</li>
+					<li><a class="govuk-link" href="https://www.youtube.com/watch?v=64qpW4rbCQw&list=PLBZAmkUw3YZsyPNPxFkjy2-QgA7Uc_XWL&index=9&t=0s" target="_blank">RNIB advert showing different types of vision loss (YouTube video)</a></li>
+					<li><a class="govuk-link" href="https://www.deque.com/empathy-lab-online/accessibility-stories/" target="_blank">Accessibility video stories collated by Deque</a></li>
+					<li><a class="govuk-link" href="https://axesslab.com/tech-youtubers/" target="_blank">Youtube videos collated by Access Lab where people showcase how they use assistive technologies</a></li>
+				  </ul>	 
+				</section>
+			</div>
+		  </div>
+		  <div class="govuk-accordion__section ">
+			<div class="govuk-accordion__section-header">
+			  <h2 class="govuk-accordion__section-heading">
+				<span class="govuk-accordion__section-button" id="accordion-default-heading-5">
+				  Visit our Accessibility Empathy Hub in London or Newcastle
+				</span>
+			  </h2>
+			</div>
+			<div id="accordion-default-content-5" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-5">
+			  <section>
+				  <p class="govuk-body">To demonstrate the barriers that disabled people can encounter we have created an Accessibility Empathy Hub in London, 10 South Colonnade, open area 7.21 and in Newcastle, Benton Park View, BP9001.</p>
+				  <p class="govuk-body">You can come along to either one at any time, you do not need to book.</p>
+				  <p class="govuk-body">We have different areas set up. Each one has a set of tasks you can carry out that will show various barriers that exist for someone with a disability.</p>
+				  <p class="aeh-float-right govuk-!-margin-left-5"><a href="https://accessibility.blog.gov.uk/2019/02/11/using-persona-profiles-to-test-accessibility/" target="_blank"><img width="500" height="313" src="./assets/images/chromebook-login-screen.jpg" alt="7 Government Digital Service (GDS) accessibility personas thumbnail image" /></a></p>
+				  <ul class="govuk-list govuk-list--bullet aeh-list">
+					<li>The Chromebooks are installed with the <a class="govuk-link" href="https://accessibility.blog.gov.uk/2019/02/11/using-persona-profiles-to-test-accessibility/" target="_blank">7 Government Digital Service (<abbr title="Government Digital Service">GDS</abbr>) accessibility personas</a>. Each persona simulates at least one disability or impairment which can cause difficulty when trying to use a digital service</li>
+					<li>Try the glasses that simulate different visual impairments. For example, common conditions such as Glaucoma; age-related Macular Degeneration; patchy vision which can be a complication of Diabetes</li>
+					<li>Put on the ear defenders to experience the effects of severe hearing loss and the difficulties this can cause</li>
+				  </ul>		  
+			  </section>				  
+			  <section>
+				  <p class="govuk-body">We’ve had lots of great feedback from visitors.</p>
+				  <div class="govuk-inset-text">
+					“It was a real reality check to help us understand how some people hear, see and read. It helped us put ourselves in their shoes and made us appreciate more the difficulty it can cause when using our services”
+				  </div>
+				  <div class="govuk-inset-text">
+					“Very informative. Good to understand the issues people face - the whole centre would benefit from this”
+				  </div>
+				  <div class="govuk-inset-text">
+					“The team really enjoyed the hands-on simulators and it will certainly inform our designs going forward”
+				  </div>
+			  </section>
+			</div>
+		  </div>
+		  </div>  
+		  
+		  <section>
+            <p class="govuk-body">Please email us at <a class="govuk-link" href="mailto:accessibility.team@hmrc.gov.uk">accessibility.team@hmrc.gov.uk</a> if you have any questions or want to know more.</p>
+		    <p class="govuk-body">You can come along to the The Accessibility Empathy Hub at any time, you do not need to book it.</p>
+          </section>
+        </main>
       </div>
-    </footer>
 
-    <script src="https://www.tax.service.gov.uk/assets/govuk-frontend/2.9.0/govuk-frontend-2.9.0.min.js"></script>
-    <script>
-      window.GOVUKFrontend.initAll()
-    </script>
+	  <footer class="govuk-footer " role="contentinfo">
+	  <div class="govuk-width-container ">
+		<div class="govuk-footer__meta">
+		  <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+			<svg role="presentation" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483.2 195.7" height="17" width="41">
+			  <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+			</svg>
+			<span class="govuk-footer__licence-description">
+			  All content is available under the <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+			</span>
+		  </div>
+		  <div class="govuk-footer__meta-item">
+			<a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+		  </div>
+		</div>
+	  </div>
+	  </footer>
+	  
+	  <script src="./assets/js/govuk-frontend.js"></script>
   </body>
-
 </html>
