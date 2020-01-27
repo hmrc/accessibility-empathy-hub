@@ -1,5 +1,6 @@
 .accordion-controls {
   text-align: right;
+  margin-bottom: 10px;
 }
 
 .accordion-expand-all {
@@ -12,7 +13,7 @@
 }
 
 .accordion .accordion-section .accordion-section-body {
-  padding-top: 14px;
+  padding: 30px 0;
 }
 
 .accordion .accordion-section[aria-expanded="false"] .accordion-section-body {
