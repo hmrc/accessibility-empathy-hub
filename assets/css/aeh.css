@@ -32,6 +32,11 @@ img {
     margin-top: 20px;
 }
 
+.govuk-inset-text {
+	margin-top: 0;
+	padding: 0 15px;
+}
+
 .aeh-float-left {
   float: left;
 }
