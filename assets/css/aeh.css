@@ -1,6 +1,91 @@
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  .govuk-template__body {
+    background-color: hsl(0, 0%, 18%);
+    color: hsl(60, 100%, 90%);
+  }
+
+  .hmrc-banner p,
+  .govuk-body-m,
+  .govuk-body,
+  .app-prose-scope p,
+  .govuk-heading-m,
+  .app-contact-panel__heading,
+  .app-prose-scope h3,
+  .govuk-list,
+  .app-prose-scope ul,
+  .app-prose-scope ol {
+    color: hsl(60, 100%, 90%);
+  }
+
+  .govuk-link:link,
+  .app-prose-scope a:link,
+  .js-enabled .govuk-accordion__open-all,
+  .js-enabled .govuk-accordion__section-header {
+    color: hsl(208, 73%, 62%);
+  }
+
+  .js-enabled .govuk-accordion__icon::after,
+  .js-enabled .govuk-accordion__icon::before {
+    background-color: hsl(208, 73%, 62%);
+  }
+
+  .govuk-link:hover,
+  .app-prose-scope a:hover,
+  .govuk-link:focus,
+  .app-prose-scope a:focus,
+  .js-enabled .govuk-accordion__open-all:hover {
+    color: hsl(216, 100%, 54%);
+  }
+
+  .govuk-link:active,
+  .app-prose-scope a:active,
+  .js-enabled .govuk-accordion__open-all:active {
+    color: hsl(180, 4%, 5%);
+  }
+
+  .govuk-link:visited,
+  .app-prose-scope a:visited {
+    color: hsl(259, 54%, 67%);
+  }
+
+  .aeh-header {
+    background-color: hsl(197, 100%, 23%);
+  }
+
+  .aeh-header-main {
+    background-color: hsl(52, 100%, 40%);
+  }
+
+  .aeh-header-sub {
+    color: hsl(60, 100%, 90%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .hmrc-banner p {
+    color: hsl(0, 0%, 0%);
+  }
+
+  .aeh-header {
+    background-color: hsl(197, 100%, 43%);
+  }
+
+  .aeh-header-main {
+    background-color: hsl(52, 100%, 50%);
+  }
+
+  .aeh-header-sub {
+    color: hsl(0, 0%, 100%);
+  }
+}
+
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .govuk-main-wrapper {
@@ -9,116 +94,128 @@ img {
 
 .aeh-header {
   padding: 20px;
-  background-color: #009ddb;
 }
+
 .aeh-header-main {
-  background-color: #ffdd00;
-  border-bottom: 5px solid #0b0c0c;
-  padding: 10px;
+  border-bottom: 5px solid hsl(180, 4%, 5%);
+  font-weight: 100;
   margin-bottom: 10px;
-  font-weight: 100;
+  padding: 10px;
 }
+
 .aeh-header-sub {
-  color: #ffffff;
-  margin-bottom: 0;
   font-weight: 100;
+  margin-bottom: 0;
 }
 
 .aeh-section {
-  border-top: 1px solid #b1b4b6;
+  border-top: 1px solid hsl(204, 3%, 70%);
   padding: 20px 0;
 }
-.aeh-list>li {
-    margin-top: 20px;
+
+.aeh-list > li {
+  margin-top: 20px;
 }
 
 .govuk-inset-text {
-	margin-top: 0;
-	padding: 0 15px;
+  margin-top: 0;
+  padding: 0 15px;
 }
 
 .aeh-float-left {
   float: left;
 }
+
 .aeh-float-right {
   float: right;
 }
+
 .aeh-float-clear {
-  display: block;
-  content: "";
   clear: both;
+  content: '';
+  display: block;
 }
 
 .video-wrapper {
-  position: relative;
+  height: 0;
   padding-bottom: 56.25%;
+
   /* 16:9 */
   padding-top: 25px;
-  height: 0;
+  position: relative;
 }
+
 .video-wrapper iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  border: 0;
 }
 
 .hmrc-banner {
   padding: 10px 0 8px;
   position: relative;
 }
+
 .hmrc-banner span {
   display: table-cell;
   vertical-align: baseline;
 }
+
 .hmrc-banner p {
   display: table;
-  margin: 0;
-  color: #000;
-  font-family: "nta", Arial, sans-serif;
+  font-family: 'nta', Arial, sans-serif;
+  font-size: 15px;
   font-weight: 400;
-  text-transform: none;
-  font-size: 14px;
   line-height: 1.14286;
+  margin: 0;
+  text-transform: none;
 }
+
 .organisation-logo {
-  padding: 3px 0 3px 30px;
-  background: url("../images/crests/hmrc_crest_18px.png") 5px center no-repeat;
+  background: url('../images/crests/hmrc_crest_18px.png') 5px center no-repeat;
   background-size: auto 20px;
-  border-left: 2px solid #009390;
+  border-left: 2px solid hsl(179, 100%, 29%);
+  padding: 3px 0 3px 30px;
 }
+
 .organisation-logo p {
   font: 13px/16px Helvetica, Arial;
   margin: 0;
 }
+
 @media (min-width: 641px) {
   .hmrc-banner {
     padding-bottom: 10px;
   }
+
   .hmrc-banner p {
     font-size: 16px;
     line-height: 1.25;
   }
+
   .organisation-logo {
     background-size: auto 26px;
     padding: 3px 0 3px 38px;
   }
+
   .organisation-logo p {
     font: 18px/22px Helvetica, Arial;
   }
 }
 @media (max-width: 480px) {
-  .aeh-float-left, .aeh-float-right {
+  .aeh-float-left,
+  .aeh-float-right {
     display: block;
-    content: "";
+    content: '';
     clear: both;
     float: none;
   }
 }
 @media all and (-webkit-min-device-pixel-ratio: 2) {
   .organisation-logo {
-    background-image: url("../images/crests/hmrc_crest_18px_x2.png");
+    background-image: url('../images/crests/hmrc_crest_18px_x2.png');
   }
 }

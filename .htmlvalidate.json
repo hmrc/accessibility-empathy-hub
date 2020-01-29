@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "html-validate:recommended"
+  ],
+  "elements": [
+    "html5",
+    "./.hmrcvalidate.json"
+  ],
+  "rules": {
+    "attr-quotes": "off",
+    "attribute-allowed-values": "off",
+    "no-conditional-comment": "off",
+    "no-trailing-whitespace": "off",
+    "void": [
+      "warn",
+      {
+        "style": "any"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "legend": {
+    "permittedContent": [
+      "@flow",
+      "h1?"
+    ]
+  }
+}
