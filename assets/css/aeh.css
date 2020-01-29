@@ -109,6 +109,14 @@ img {
     font: 18px/22px Helvetica, Arial;
   }
 }
+@media (max-width: 480px) {
+  .aeh-float-left, .aeh-float-right {
+    display: block;
+    content: "";
+    clear: both;
+    float: none;
+  }
+}
 @media all and (-webkit-min-device-pixel-ratio: 2) {
   .organisation-logo {
     background-image: url("../images/crests/hmrc_crest_18px_x2.png");
