@@ -6,4 +6,4 @@
 
 [![a Microsoft branded poster with illustrations of people with permanent, temporary or situational conditions with regards to touch, see, hear and speak](../../assets/images/resources/inclusive-permanent-temporary-situational-preview.jpg)](HMRC-AccessibilityEmpathyHub-InclusivePermanentTemporarySituational%20%28JPEG%20144%20KB%29.jpg)
 
-[Reference <microsoft.com/design/inclusive/>]
+[Reference [microsoft.com/design/inclusive/](https://www.microsoft.com/design/inclusive/)]
