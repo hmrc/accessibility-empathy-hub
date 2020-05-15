@@ -1,2 +1,2 @@
 
-# [Visit an HMRC Accessibility Empathy Hub](https://hmrc.github.io/accessibility-empathy-hub/)
+# [HMRC Accessibility Empathy Hub](https://hmrc.github.io/accessibility-empathy-hub/)
