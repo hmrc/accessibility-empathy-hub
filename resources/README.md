@@ -12,6 +12,8 @@ This page contains links to view and download high resolution images of the prin
 - [Statistics board](statistics-board/README.md)
 - [Braille board](braille-board/README.md)
 - [British Sign Language (BSL) fingerspelling alphabet](bsl-fingerspelling-alphabet/README.md)
+- [Do/Don't for writing content](do-dont-writing-content/README.md)
+- [Do/Don't for creating a PowerPoint presentation](do-dont-powerpoint/README.md)
 
 ## Chromebooks
 
